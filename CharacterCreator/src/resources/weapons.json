@@ -1,30 +1,34 @@
 [
     {
-        "name": "heal",
+        "name": "Heal",
         "level": "1",
         "damage": "4",
         "reach": "2",
-        "aoe": "1"
+        "aoe": "1",
+        "imgPath": ["src\\resources\\weaponImg\\heal.png"]
     },
     {
-        "name": "fire",
+        "name": "Fire",
         "level": "2",
-        "damage": "2",
+        "damage": "-2",
         "reach": "2",
-        "aoe": "2"
+        "aoe": "2",
+        "imgPath": ["src\\resources\\weaponImg\\fire.png"]
     },
     {
-        "name": "bow",
+        "name": "Bow",
         "level": "1",
-        "damage": "1",
+        "damage": "-1",
         "reach": "3",
-        "aoe": "1"
+        "aoe": "1",
+        "imgPath": ["src\\resources\\weaponImg\\bow.png"]
     },
     {
-        "name": "sword",
+        "name": "Sword",
         "level": "1",
-        "damage": "2",
+        "damage": "-2",
         "reach": "1",
-        "aoe": "1"
+        "aoe": "1",
+        "imgPath": ["src\\resources\\weaponImg\\sword.png"]
     }
 ]

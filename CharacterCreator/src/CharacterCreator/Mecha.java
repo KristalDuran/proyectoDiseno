@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Pumkin
  */
-public class Character implements ICharacter{
+public class Mecha extends ICharacter{
     
     private String name;
     private int level;
@@ -22,13 +22,13 @@ public class Character implements ICharacter{
     private int size;
     private int playerLevel;
     private List<Weapon> weapons = new ArrayList<>();
-    private String imgPath;
+    private List<String> imgPaths = new ArrayList<>();
 
-    public Character(){
+    public Mecha(){
         
     }
     
-    public Character(String name, int level, double hp, double dps, int cost, int size, int playerLevel, String imgPath) {
+    public Mecha(String name, int level, double hp, double dps, int cost, int size, int playerLevel, List<String> imgPaths) {
         this.name = name;
         this.level = level;
         this.hp = hp;
@@ -36,7 +36,7 @@ public class Character implements ICharacter{
         this.cost = cost;
         this.size = size;
         this.playerLevel = playerLevel;
-        this.imgPath = imgPath;
+        this.imgPaths = imgPaths;
     }
 
     public String getName() {
@@ -103,14 +103,12 @@ public class Character implements ICharacter{
         this.weapons = weapons;
     }
 
-    public String getImgPath() {
-        return imgPath;
+    public List<String> getImgPath() {
+        return imgPaths;
     }
 
-    public void setImgPath(String imgPath) {
-        this.imgPath = imgPath;
+    public void setImgPath(List<String> imgPath) {
+        this.imgPaths = imgPath;
     }
-    
-    
     
 }

@@ -1,0 +1,11 @@
+{
+        "name": "Robo-Lion",
+        "level": "8",
+        "hp": "22",
+        "dps": "0.8",
+        "cost": "3", 
+        "size": "1",
+        "playerLevel": "2",
+        "weapons": ["fire"],
+        "imgPath": "src\\resources\\characterImg\\robolion.png"
+}

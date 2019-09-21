@@ -5,6 +5,9 @@
  */
 package CharacterCreator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Pumkin
@@ -16,17 +19,19 @@ public class Weapon implements IWeapon{
     private double damage;
     private int reach;
     private int aoe; //area of effect
+    private List<String> imgPaths = new ArrayList<>();
     
     private Weapon(){
         
     }
 
-    public Weapon(String name, int level, double damage, int reach, int aoe) {
+    public Weapon(String name, int level, double damage, int reach, int aoe, List<String> imgPaths) {
         this.name = name;
         this.level = level;
         this.damage = damage;
         this.reach = reach;
         this.aoe = aoe;
+        this.imgPaths = imgPaths;
     }
 
     public String getName() {
@@ -67,6 +72,14 @@ public class Weapon implements IWeapon{
 
     public void setAoe(int aoe) {
         this.aoe = aoe;
+    }
+
+    public List<String> getImgPath() {
+        return imgPaths;
+    }
+
+    public void setImgPath(List<String> imgPath) {
+        this.imgPaths = imgPath;
     }
     
     

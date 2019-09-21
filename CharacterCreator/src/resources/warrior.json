@@ -8,7 +8,7 @@
         "size": "1",
         "playerLevel": "1",
         "weapons": ["heal", "bow"],
-        "imgPath": "asd"
+        "imgPath": ["src\\resources\\characterImg\\raquel.png"]
     },
     {
         "name": "Quesote",
@@ -19,6 +19,6 @@
         "size": "1",
         "playerLevel": "1",
         "weapons": ["sword", "fire"],
-        "imgPath": "asd"
+        "imgPath": ["src\\resources\\characterImg\\qaquel.png"]
     }
 ]

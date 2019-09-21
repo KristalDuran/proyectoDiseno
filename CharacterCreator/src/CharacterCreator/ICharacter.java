@@ -5,10 +5,23 @@
  */
 package CharacterCreator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Pumkin
  */
-public interface ICharacter {
+public abstract class ICharacter {
+    
+    private String name;
+    private int level;
+    private double hp; //health points
+    private double dps; //damage per second
+    private int cost;
+    private int size;
+    private int playerLevel;
+    private List<Weapon> weapons = new ArrayList<>();
+    private List<String> imgPaths = new ArrayList<>();
     
 }
