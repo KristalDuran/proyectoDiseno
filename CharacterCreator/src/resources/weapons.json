@@ -1,0 +1,30 @@
+[
+    {
+        "name": "heal",
+        "level": "1",
+        "damage": "4",
+        "reach": "2",
+        "aoe": "1"
+    },
+    {
+        "name": "fire",
+        "level": "2",
+        "damage": "2",
+        "reach": "2",
+        "aoe": "2"
+    },
+    {
+        "name": "bow",
+        "level": "1",
+        "damage": "1",
+        "reach": "3",
+        "aoe": "1"
+    },
+    {
+        "name": "sword",
+        "level": "1",
+        "damage": "2",
+        "reach": "1",
+        "aoe": "1"
+    }
+]

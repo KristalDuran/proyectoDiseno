@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Raquel",
+        "level": "5",
+        "hp": "20",
+        "dps": "0.5",
+        "cost": "3", 
+        "size": "1",
+        "playerLevel": "1",
+        "weapons": ["heal", "bow"],
+        "imgPath": "asd"
+    },
+    {
+        "name": "Quesote",
+        "level": "3",
+        "hp": "15",
+        "dps": "0.420",
+        "cost": "2", 
+        "size": "1",
+        "playerLevel": "1",
+        "weapons": ["sword", "fire"],
+        "imgPath": "asd"
+    }
+]
