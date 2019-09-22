@@ -110,5 +110,16 @@ public class Mecha extends ICharacter{
     public void setImgPath(List<String> imgPath) {
         this.imgPaths = imgPath;
     }
+
+    @Override
+    public Character deepClone() {
+        return super.deepClone(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Character clone() {
+        return super.clone(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     
 }

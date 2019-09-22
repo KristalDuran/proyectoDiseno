@@ -81,7 +81,20 @@ public class Weapon implements IWeapon{
     public void setImgPath(List<String> imgPath) {
         this.imgPaths = imgPath;
     }
-    
+
+    @Override
+    public Weapon clone() {
+        return new Weapon();
+    }
+
+    @Override
+    public Weapon deepClone() {
+        return new Weapon();
+    }
+
+  
+
+ 
     
     
 }

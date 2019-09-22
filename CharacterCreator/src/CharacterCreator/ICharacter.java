@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Pumkin
  */
-public abstract class ICharacter {
+public abstract class ICharacter implements IPrototypeCharacter{
     
     private String name;
     private int level;
@@ -23,5 +23,17 @@ public abstract class ICharacter {
     private int playerLevel;
     private List<Weapon> weapons = new ArrayList<>();
     private List<String> imgPaths = new ArrayList<>();
+
+    @Override
+    public Character clone() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Character deepClone() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+ 
     
 }

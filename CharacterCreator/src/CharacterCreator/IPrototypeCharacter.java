@@ -5,10 +5,15 @@
  */
 package CharacterCreator;
 
+
+
 /**
  *
- * @author Pumkin
+ * @author raque
  */
-public interface IWeapon extends IPrototypeWeapon{
+public interface IPrototypeCharacter<T extends Character> extends Cloneable {
+    
+    public T clone();
+    public T deepClone();
     
 }
