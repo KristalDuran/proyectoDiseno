@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Pumkin
  */
-public class Warrior extends ICharacter{
+public class Warrior extends ICharacter implements IPrototypeCharacter{
     
     private String name;
     private int level;
@@ -28,7 +28,8 @@ public class Warrior extends ICharacter{
         
     }
     
-    public Warrior(String name, int level, double hp, double dps, int cost, int size, int playerLevel, List<String> imgPaths) {
+    public Warrior(String name, int level, double hp, double dps, int cost, 
+            int size, int playerLevel, List<String> imgPaths) {
         this.name = name;
         this.level = level;
         this.hp = hp;
@@ -36,6 +37,18 @@ public class Warrior extends ICharacter{
         this.cost = cost;
         this.size = size;
         this.playerLevel = playerLevel;
+        this.imgPaths = imgPaths;
+    }
+    public Warrior(String name, int level, double hp, double dps, int cost, 
+            int size, int playerLevel,List<Weapon> weapons, List<String> imgPaths) {
+        this.name = name;
+        this.level = level;
+        this.hp = hp;
+        this.dps = dps;
+        this.cost = cost;
+        this.size = size;
+        this.playerLevel = playerLevel;
+        this.weapons = weapons;
         this.imgPaths = imgPaths;
     }
 
@@ -110,5 +123,33 @@ public class Warrior extends ICharacter{
     public void setImgPath(List<String> imgPath) {
         this.imgPaths = imgPath;
     }
+
+    @Override
+    public IPrototypeCharacter clone() {
+        return new Warrior(this.name,this.level, this.hp, this.dps, this.cost,
+        this.size, this.playerLevel, this.weapons, this.imgPaths);
+    }
+
+    @Override
+    public IPrototypeCharacter deepClone() {
+         List<Weapon> newWeapons = new ArrayList<>();
+         List<String> newImgPaths = new ArrayList<>();
+         for (Weapon weapon : this.weapons) {
+            newWeapons.add(new Weapon(weapon.getName(), weapon.getLevel(), 
+                    weapon.getDamage(), weapon.getReach(), weapon.getAoe(), weapon.getImgPath()));
+        }
+        for (String imagen : this.imgPaths) {
+            newImgPaths.add(new String(imagen));
+        }
+        return new Warrior(this.name,this.level, this.hp, this.dps, this.cost,
+        this.size, this.playerLevel, newWeapons, newImgPaths);
+    }
+
+    @Override
+    public String toString() {
+        return "Warrior{" + "name=" + name + ", level=" + level + ", hp=" + hp + ", dps=" + dps + ", cost=" + cost + ", size=" + size + ", playerLevel=" + playerLevel + ", weapons=" + weapons + ", imgPaths=" + imgPaths + '}';
+    }
+    
+    
     
 }
