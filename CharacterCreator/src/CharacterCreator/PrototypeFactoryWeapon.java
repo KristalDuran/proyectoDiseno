@@ -13,14 +13,14 @@ import java.util.HashMap;
  */
 public class PrototypeFactoryWeapon {
     
-     public static HashMap<Integer, IPrototypeCharacter> prototypesWeapons = new HashMap<>();
+     public static HashMap<String, IPrototypeWeapon> prototypesWeapons = new HashMap<>();
     
-    public static Character getCloneWeapon(String weaponName){
-        return prototypesWeapons.get(weaponName).deepClone();
+    public static Weapon getCloneWeapon(String weaponName){
+        return (Weapon) prototypesWeapons.get(weaponName).deepClone();
     }
     
-    public static void addWeapon(Integer number, IPrototypeCharacter prototype){
-        prototypesWeapons.put(number, prototype);
+    public static void addWeapon(String name, IPrototypeWeapon prototype){
+        prototypesWeapons.put(name, prototype);
     }
     
 }

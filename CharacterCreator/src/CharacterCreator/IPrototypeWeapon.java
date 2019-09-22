@@ -10,7 +10,7 @@ package CharacterCreator;
  * @author raque
  */
 
-public interface IPrototypeWeapon<T extends Weapon> extends Cloneable {
+public interface IPrototypeWeapon<T extends IPrototypeWeapon> extends Cloneable {
     
     public T clone();
     public T deepClone();

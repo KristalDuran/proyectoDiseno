@@ -84,12 +84,21 @@ public class Weapon implements IWeapon{
 
     @Override
     public Weapon clone() {
-        return new Weapon();
+        return new Weapon(this.name, this.level, this.damage, this.reach, this.aoe, this.imgPaths);
     }
 
     @Override
     public Weapon deepClone() {
-        return new Weapon();
+        List<String> newImgPaths = new ArrayList<>();
+        for (String imagen : this.imgPaths) {
+            newImgPaths.add(new String(imagen));
+        }
+        return new Weapon(this.name, this.level, this.damage, this.reach, this.aoe, newImgPaths);
+    }
+
+    @Override
+    public String toString() {
+        return "Weapon{" + "name=" + name + ", level=" + level + ", damage=" + damage + ", reach=" + reach + ", aoe=" + aoe + ", imgPaths=" + imgPaths + '}';
     }
 
   

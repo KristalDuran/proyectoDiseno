@@ -11,7 +11,7 @@ package CharacterCreator;
  *
  * @author raque
  */
-public interface IPrototypeCharacter<T extends Character> extends Cloneable {
+public interface IPrototypeCharacter<T extends IPrototypeCharacter> extends Cloneable {
     
     public T clone();
     public T deepClone();

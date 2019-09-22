@@ -13,14 +13,14 @@ import java.util.HashMap;
  */
 public class PrototypeFactoryCharacter {
     
-     public static HashMap<Integer, IPrototypeCharacter> prototypesCharacter = new HashMap<>();
+     public static HashMap<String, IPrototypeCharacter> prototypesCharacter = new HashMap<>();
     
-    public static Character getCloneCharacter(String characterName){
-        return prototypesCharacter.get(characterName).deepClone();
+    public static ICharacter getCloneCharacter(String characterName){
+        return (ICharacter) prototypesCharacter.get(characterName).deepClone();
     }
     
-    public static void addCharacter(Integer number, IPrototypeCharacter prototype){
-        prototypesCharacter.put(number, prototype);
+    public static void addCharacter(String name, IPrototypeCharacter prototype){
+        prototypesCharacter.put(name, prototype);
     } 
     
 }
