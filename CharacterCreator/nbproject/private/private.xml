@@ -3,16 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/Warrior.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/resources/weapons.json</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/IPrototypeCharacter.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/PrototypeFactoryCharacter.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/ICharacter.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/IPrototypeWeapon.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/Weapon.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/IWeapon.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/Mecha.java</file>
-            <file>file:/C:/Users/raque/Documents/GitHub/proyectoDiseno/CharacterCreator/src/CharacterCreator/PrototypeFactoryWeapon.java</file>
+            <file>file:/C:/Users/Pumkin/Documents/Progras/Diseño/Proyecto%20Parte%201/proyectoDiseno/CharacterCreator/src/GUI/GUI.java</file>
+            <file>file:/C:/Users/Pumkin/Documents/Progras/Diseño/Proyecto%20Parte%201/proyectoDiseno/CharacterCreator/src/resources/warrior.json</file>
+            <file>file:/C:/Users/Pumkin/Documents/Progras/Diseño/Proyecto%20Parte%201/proyectoDiseno/CharacterCreator/src/resources/mecha.json</file>
+            <file>file:/C:/Users/Pumkin/Documents/Progras/Diseño/Proyecto%20Parte%201/proyectoDiseno/CharacterCreator/src/GUI/Controller.java</file>
+            <file>file:/C:/Users/Pumkin/Documents/Progras/Diseño/Proyecto%20Parte%201/proyectoDiseno/CharacterCreator/src/CharacterCreator/Mecha.java</file>
         </group>
     </open-files>
 </project-private>

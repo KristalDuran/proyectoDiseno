@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Pumkin
  */
-public abstract class ICharacter {
+public abstract class ICharacter{
     
     private String name;
     private int level;
@@ -21,8 +21,8 @@ public abstract class ICharacter {
     private int cost;
     private int size;
     private int playerLevel;
-    private List<Weapon> weapons = new ArrayList<>();
-    private List<String> imgPaths = new ArrayList<>();
+    private List<Weapon> weapons;
+    private List<String> imgPaths;
 
     public String getName() {
         return name;

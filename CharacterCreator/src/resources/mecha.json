@@ -1,11 +1,24 @@
-{
-        "name": "Robo-Lion",
-        "level": "8",
-        "hp": "22",
-        "dps": "0.8",
-        "cost": "3", 
-        "size": "1",
-        "playerLevel": "2",
-        "weapons": ["fire"],
-        "imgPath": "src\\resources\\characterImg\\robolion.png"
-}
+[
+    {
+                "name": "Robo-Lion",
+                "level": 8,
+                "hp": 22.0,
+                "dps": 0.8,
+                "cost": 3, 
+                "size": 1,
+                "playerLevel": 2,
+                "weapons": ["Fire"],
+                "imgPaths": ["src\\resources\\mechaImg\\robolion.png"]
+    },
+    {
+                "name": "Robo-Moose",
+                "level": 7,
+                "hp": 25.0,
+                "dps": 0.7,
+                "cost": 4, 
+                "size": 1,
+                "playerLevel": 1,
+                "weapons": ["Roar", "Fire"],
+                "imgPaths": ["src\\resources\\mechaImg\\robomoose.png"]
+    }
+]

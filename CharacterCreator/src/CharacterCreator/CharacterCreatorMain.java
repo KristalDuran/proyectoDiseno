@@ -5,7 +5,8 @@
  */
 package CharacterCreator;
 
-import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
+import PrototypePattern.PrototypeFactoryWeapon;
+import PrototypePattern.PrototypeFactoryCharacter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,13 +37,6 @@ public class CharacterCreatorMain {
                                .addImg("/h/j")
                                .addWeapon(new Weapon("", 0, 0, 0, 0, al))
                                .buildMecha();
-        
-        
-        Controller controller = new Controller();
-        
-        controller.setName("Name");
-        controller.setCost(10);
-        controller.buildMecha();
         
         
         
