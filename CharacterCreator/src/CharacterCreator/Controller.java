@@ -5,6 +5,8 @@
  */
 package CharacterCreator;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author kduran
@@ -16,13 +18,16 @@ public class Controller {
         builder = new CharacterBuilder();
     }
 
-    
-    public ICharacter getCharacter(String type){
-        ICharacter character = Factory.getCharacter(type);
+    public ICharacter getCharacter(String key){
+        ICharacter character = PrototypeFactoryCharacter.getCloneCharacter(key);
         this.builder.repairCharacter(character);
         return character;
     }
 
+    public IWeapon getWeapon(String key){
+        return PrototypeFactoryWeapon.getCloneWeapon(key);
+    }
+    
     public void setName(String name) {
         this.builder = builder.setName(name);
     }
