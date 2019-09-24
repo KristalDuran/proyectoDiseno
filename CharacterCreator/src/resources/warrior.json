@@ -1,24 +1,46 @@
 [
     {
         "name": "Raquel",
-        "level": "5",
-        "hp": "20",
-        "dps": "0.5",
-        "cost": "3", 
-        "size": "1",
-        "playerLevel": "1",
-        "weapons": ["heal", "bow"],
-        "imgPath": ["src\\resources\\characterImg\\raquel.png"]
+        "level": 5,
+        "hp": 22,
+        "dps": 0.6,
+        "cost": 3, 
+        "size": 1,
+        "playerLevel": 1,
+        "weapons": ["Heal", "Bow"],
+        "imgPaths": ["src\\resources\\warriorImg\\raquel.png"]
     },
     {
         "name": "Quesote",
-        "level": "3",
-        "hp": "15",
-        "dps": "0.420",
-        "cost": "2", 
-        "size": "1",
-        "playerLevel": "1",
-        "weapons": ["sword", "fire"],
-        "imgPath": ["src\\resources\\characterImg\\qaquel.png"]
+        "level": 3,
+        "hp": 20,
+        "dps": 0.420,
+        "cost": 2, 
+        "size": 1,
+        "playerLevel": 1,
+        "weapons": ["Sword", "Fire"],
+        "imgPaths": ["src\\resources\\warriorImg\\raquel.png"]
+    },
+    {
+        "name": "Kristal",
+        "level": 5,
+        "hp": 25,
+        "dps": 0.8,
+        "cost": 3, 
+        "size": 1,
+        "playerLevel": 1,
+        "weapons": ["Heal", "Fire", "Roar"],
+        "imgPaths": ["src\\resources\\warriorImg\\kristal1.png", "src\\resources\\warriorImg\\kristal2.png"]
+    },
+    {
+        "name": "Fabio",
+        "level": 3,
+        "hp": 18,
+        "dps": 0.5,
+        "cost": 2, 
+        "size": 1,
+        "playerLevel": 1,
+        "weapons": ["Spear"],
+        "imgPaths": ["src\\resources\\warriorImg\\fabio.png"]
     }
 ]

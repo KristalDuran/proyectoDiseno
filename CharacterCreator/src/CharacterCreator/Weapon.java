@@ -16,7 +16,7 @@ public class Weapon implements IWeapon{
     
     private String name;
     private int level;
-    private double damage;
+    private float damage;
     private int reach;
     private int aoe; //area of effect
     private List<String> imgPaths = new ArrayList<>();
@@ -25,7 +25,7 @@ public class Weapon implements IWeapon{
         
     }
 
-    public Weapon(String name, int level, double damage, int reach, int aoe, List<String> imgPaths) {
+    public Weapon(String name, int level, float damage, int reach, int aoe, List<String> imgPaths) {
         this.name = name;
         this.level = level;
         this.damage = damage;
@@ -50,11 +50,11 @@ public class Weapon implements IWeapon{
         this.reach = reach;
     }
 
-    public double getDamage() {
+    public float getDamage() {
         return damage;
     }
 
-    public void setDamage(double damage) {
+    public void setDamage(float damage) {
         this.damage = damage;
     }
 
@@ -80,6 +80,11 @@ public class Weapon implements IWeapon{
 
     public void setImgPath(List<String> imgPath) {
         this.imgPaths = imgPath;
+    }
+
+    @Override
+    public String toString() {
+        return "Weapon{" + "name=" + name + ", level=" + level + ", damage=" + damage + ", reach=" + reach + ", aoe=" + aoe + ", imgPaths=" + imgPaths + '}';
     }
     
     

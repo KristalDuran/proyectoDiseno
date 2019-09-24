@@ -1,34 +1,50 @@
 [
     {
         "name": "Heal",
-        "level": "1",
-        "damage": "4",
-        "reach": "2",
-        "aoe": "1",
-        "imgPath": ["src\\resources\\weaponImg\\heal.png"]
+        "level": 1,
+        "damage": 4,
+        "reach": 2,
+        "aoe": 1,
+        "imgPaths": ["src\\resources\\weaponImg\\heal1.png", "src\\resources\\weaponImg\\heal2.png"]
     },
     {
         "name": "Fire",
-        "level": "2",
-        "damage": "-2",
-        "reach": "2",
-        "aoe": "2",
-        "imgPath": ["src\\resources\\weaponImg\\fire.png"]
+        "level": 2,
+        "damage": -2,
+        "reach": 2,
+        "aoe": 2,
+        "imgPaths": ["src\\resources\\weaponImg\\fire.png"]
     },
     {
         "name": "Bow",
-        "level": "1",
-        "damage": "-1",
-        "reach": "3",
-        "aoe": "1",
-        "imgPath": ["src\\resources\\weaponImg\\bow.png"]
+        "level": 1,
+        "damage": -1,
+        "reach": 3,
+        "aoe": 1,
+        "imgPaths": ["src\\resources\\weaponImg\\bow.png"]
     },
     {
         "name": "Sword",
-        "level": "1",
-        "damage": "-2",
-        "reach": "1",
-        "aoe": "1",
-        "imgPath": ["src\\resources\\weaponImg\\sword.png"]
+        "level": 1,
+        "damage": -3,
+        "reach": 1,
+        "aoe": 1,
+        "imgPaths": ["src\\resources\\weaponImg\\sword.png"]
+    },
+    {
+        "name": "Spear",
+        "level": 1,
+        "damage": -2,
+        "reach": 2,
+        "aoe": 1,
+        "imgPaths": ["src\\resources\\weaponImg\\spear.png"]
+    },
+    {
+        "name": "Roar",
+        "level": 1,
+        "damage": -1,
+        "reach": 2,
+        "aoe": 3,
+        "imgPaths": ["src\\resources\\weaponImg\\roar.png"]
     }
 ]

@@ -16,8 +16,8 @@ public class Mecha extends ICharacter{
     
     private String name;
     private int level;
-    private double hp; //health points
-    private double dps; //damage per second
+    private float hp; //health points
+    private float dps; //damage per second
     private int cost;
     private int size;
     private int playerLevel;
@@ -28,7 +28,7 @@ public class Mecha extends ICharacter{
         
     }
     
-    public Mecha(String name, int level, double hp, double dps, int cost, int size, int playerLevel, List<String> imgPaths) {
+    public Mecha(String name, int level, float hp, float dps, int cost, int size, int playerLevel, List<String> imgPaths) {
         this.name = name;
         this.level = level;
         this.hp = hp;
@@ -55,19 +55,19 @@ public class Mecha extends ICharacter{
         this.level = level;
     }
 
-    public double getHp() {
+    public float getHp() {
         return hp;
     }
 
-    public void setHp(double hp) {
+    public void setHp(float hp) {
         this.hp = hp;
     }
 
-    public double getDps() {
+    public float getDps() {
         return dps;
     }
 
-    public void setDps(double dps) {
+    public void setDps(float dps) {
         this.dps = dps;
     }
 
@@ -110,5 +110,11 @@ public class Mecha extends ICharacter{
     public void setImgPath(List<String> imgPath) {
         this.imgPaths = imgPath;
     }
+
+    @Override
+    public String toString() {
+        return "Mecha{" + "name=" + name + ", level=" + level + ", hp=" + hp + ", dps=" + dps + ", cost=" + cost + ", size=" + size + ", playerLevel=" + playerLevel + ", weapons=" + weapons + ", imgPaths=" + imgPaths + '}';
+    }
+
     
 }
