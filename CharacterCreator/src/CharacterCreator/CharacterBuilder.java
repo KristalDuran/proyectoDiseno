@@ -22,6 +22,10 @@ public class CharacterBuilder implements IBuilder<ICharacter>{
     private int playerLevel;
     private List<Weapon> weapons = new ArrayList<>();
     private List<String> imgPaths = new ArrayList<>();
+
+    public String getName() {
+        return name;
+    }
     
     public CharacterBuilder setName(String name) {
         this.name = name;

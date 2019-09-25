@@ -284,7 +284,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comBoxCharList2);
-        comBoxCharList2.setBounds(580, 30, 170, 26);
+        comBoxCharList2.setBounds(580, 30, 170, 22);
 
         btnAddChar2.setText("Add");
         btnAddChar2.addActionListener(new java.awt.event.ActionListener() {
@@ -293,7 +293,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddChar2);
-        btnAddChar2.setBounds(580, 60, 60, 32);
+        btnAddChar2.setBounds(580, 60, 60, 25);
 
         textPaneP2.setEditable(false);
         jScrollPane1.setViewportView(textPaneP2);
@@ -312,7 +312,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comBoxWeaponP2);
-        comBoxWeaponP2.setBounds(760, 400, 130, 26);
+        comBoxWeaponP2.setBounds(760, 400, 130, 22);
 
         labelWeaponIcon2.setPreferredSize(new java.awt.Dimension(30, 30));
         getContentPane().add(labelWeaponIcon2);
@@ -330,7 +330,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comBoxWeaponP1);
-        comBoxWeaponP1.setBounds(10, 410, 130, 26);
+        comBoxWeaponP1.setBounds(10, 410, 130, 22);
 
         labelWeaponIcon1.setPreferredSize(new java.awt.Dimension(30, 30));
         getContentPane().add(labelWeaponIcon1);
@@ -340,12 +340,18 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(labelAddRemove2);
         labelAddRemove2.setBounds(760, 470, 130, 16);
 
+        comBoxAddRem2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Heal", "Fire", "Bow", "Sword", "Spear", "Roar" }));
         getContentPane().add(comBoxAddRem2);
-        comBoxAddRem2.setBounds(760, 490, 130, 26);
+        comBoxAddRem2.setBounds(760, 490, 130, 22);
 
         btnRemove2.setText("Remove");
+        btnRemove2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemove2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRemove2);
-        btnRemove2.setBounds(810, 520, 80, 32);
+        btnRemove2.setBounds(810, 520, 80, 25);
 
         btnAdd2.setText("Add");
         btnAdd2.addActionListener(new java.awt.event.ActionListener() {
@@ -354,18 +360,34 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAdd2);
-        btnAdd2.setBounds(760, 520, 52, 32);
+        btnAdd2.setBounds(760, 520, 55, 25);
 
         btnRemove1.setText("Remove");
+        btnRemove1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemove1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRemove1);
-        btnRemove1.setBounds(60, 520, 80, 32);
+        btnRemove1.setBounds(60, 520, 80, 25);
 
         btnAdd1.setText("Add");
+        btnAdd1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdd1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnAdd1);
-        btnAdd1.setBounds(10, 520, 52, 32);
+        btnAdd1.setBounds(10, 520, 55, 25);
 
+        comBoxAddRem1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Heal", "Fire", "Bow", "Sword", "Spear", "Roar" }));
+        comBoxAddRem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comBoxAddRem1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(comBoxAddRem1);
-        comBoxAddRem1.setBounds(10, 490, 130, 26);
+        comBoxAddRem1.setBounds(10, 490, 130, 22);
 
         labelAddRemove1.setText("Add / Remove Weapon");
         getContentPane().add(labelAddRemove1);
@@ -381,7 +403,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(comBoxCharList1);
-        comBoxCharList1.setBounds(150, 30, 170, 26);
+        comBoxCharList1.setBounds(150, 30, 170, 22);
 
         btnAddChar1.setText("Add");
         btnAddChar1.addActionListener(new java.awt.event.ActionListener() {
@@ -390,7 +412,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddChar1);
-        btnAddChar1.setBounds(260, 60, 60, 32);
+        btnAddChar1.setBounds(260, 60, 60, 25);
 
         labelP1.setText("Player 1");
         getContentPane().add(labelP1);
@@ -402,15 +424,16 @@ public class GUI extends javax.swing.JFrame {
 
         btnP1UpLvl.setText("Level+1");
         getContentPane().add(btnP1UpLvl);
-        btnP1UpLvl.setBounds(60, 440, 77, 32);
+        btnP1UpLvl.setBounds(60, 440, 77, 25);
 
         btnP2UpLvl1.setText("Level+1");
         getContentPane().add(btnP2UpLvl1);
-        btnP2UpLvl1.setBounds(820, 430, 74, 32);
+        btnP2UpLvl1.setBounds(820, 430, 77, 25);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void P2char_11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_P2char_11MouseClicked
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 2; j++){
@@ -418,10 +441,13 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_11.setBorder(this.border);
+        controller.setCurrentP2Position(0);
+        controller.setCurrentP2Character(playe2List.get(0));
         String characterInfo = controller.getCharacterInfo(playe2List.get(0));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
         comBoxWeaponP2.removeAllItems();
+        System.out.println(characterInfo);
         for(IWeapon i : playe2List.get(0).getWeapons()){
             Weapon w = (Weapon) i;
             comBoxWeaponP2.addItem(w.getName());
@@ -445,7 +471,22 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_comBoxCharList1ActionPerformed
 
     private void btnAdd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd2ActionPerformed
-        // TODO add your handling code here:
+        ICharacter character = controller.getCurrentP2Character();
+        character.getWeapons().add((Weapon) controller.getWeapon((String) comBoxAddRem2.getSelectedItem()));
+        playe2List.remove(controller.getCurrentP2Position());
+        playe2List.add(controller.getCurrentP2Position(), character);
+        comBoxWeaponP2.removeAllItems();
+        for(IWeapon i : playe2List.get(controller.getCurrentP2Position()).getWeapons()){
+            Weapon w = (Weapon) i;
+            comBoxWeaponP2.addItem(w.getName());
+        }
+        try{
+            String path = controller.getWeaponImg((String)comBoxWeaponP2.getSelectedItem());
+            BufferedImage img = ImageIO.read(new File(path));
+            labelWeaponIcon2.setIcon(new ImageIcon(img));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_btnAdd2ActionPerformed
 
     private void comBoxWeaponP2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBoxWeaponP2ActionPerformed
@@ -459,7 +500,9 @@ public class GUI extends javax.swing.JFrame {
                 String path = controller.getCharacterImg((String)comBoxCharList1.getSelectedItem());
                 BufferedImage img = ImageIO.read(new File(path));
                 p1Board[xy[0]][xy[1]].setIcon(new ImageIcon(img));
+                
                 playe1List.add(controller.getCharacter((String)comBoxCharList1.getSelectedItem()));
+                
             }
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -487,6 +530,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_11.setBorder(this.border);
+        controller.setCurrentP1Position(0);
+        controller.setCurrentP1Character(playe1List.get(0));
         String characterInfo = controller.getCharacterInfo(playe1List.get(0));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -511,6 +556,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_12.setBorder(this.border);
+        controller.setCurrentP1Position(1);
+        controller.setCurrentP1Character(playe1List.get(1));
         String characterInfo = controller.getCharacterInfo(playe1List.get(1));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -548,6 +595,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_21.setBorder(this.border);
+        controller.setCurrentP1Position(2);
+        controller.setCurrentP1Character(playe1List.get(2));
         String characterInfo = controller.getCharacterInfo(playe1List.get(2));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -572,6 +621,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_22.setBorder(this.border);
+        controller.setCurrentP1Position(3);
+        controller.setCurrentP1Character(playe1List.get(3));
         String characterInfo = controller.getCharacterInfo(playe1List.get(3));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -596,6 +647,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_31.setBorder(this.border);
+        controller.setCurrentP1Position(4);
+        controller.setCurrentP1Character(playe1List.get(4));
         String characterInfo = controller.getCharacterInfo(playe1List.get(4));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -620,6 +673,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P1char_32.setBorder(this.border);
+        controller.setCurrentP1Position(5);
+        controller.setCurrentP1Character(playe1List.get(5));
         String characterInfo = controller.getCharacterInfo(playe1List.get(5));
         textPaneP1.setText("");
         textPaneP1.setText(characterInfo);
@@ -656,6 +711,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_12.setBorder(this.border);
+        controller.setCurrentP2Position(1);
+        controller.setCurrentP2Character(playe2List.get(1));
         String characterInfo = controller.getCharacterInfo(playe2List.get(1));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
@@ -680,6 +737,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_21.setBorder(this.border);
+        controller.setCurrentP2Position(2);
+        controller.setCurrentP2Character(playe2List.get(2));
         String characterInfo = controller.getCharacterInfo(playe2List.get(2));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
@@ -704,6 +763,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_22.setBorder(this.border);
+        controller.setCurrentP2Position(3);
+        controller.setCurrentP2Character(playe2List.get(3));
         String characterInfo = controller.getCharacterInfo(playe2List.get(3));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
@@ -728,6 +789,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_31.setBorder(this.border);
+        controller.setCurrentP2Position(4);
+        controller.setCurrentP2Character(playe2List.get(4));
         String characterInfo = controller.getCharacterInfo(playe2List.get(4));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
@@ -752,6 +815,8 @@ public class GUI extends javax.swing.JFrame {
             } 
         }
         P2char_32.setBorder(this.border);
+        controller.setCurrentP2Position(5);
+        controller.setCurrentP2Character(playe2List.get(5));
         String characterInfo = controller.getCharacterInfo(playe2List.get(5));
         textPaneP2.setText("");
         textPaneP2.setText(characterInfo);
@@ -768,6 +833,73 @@ public class GUI extends javax.swing.JFrame {
             ex.printStackTrace();
         }  
     }//GEN-LAST:event_P2char_32MouseClicked
+
+    private void comBoxAddRem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBoxAddRem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comBoxAddRem1ActionPerformed
+
+    private void btnAdd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdd1ActionPerformed
+        ICharacter character = controller.getCurrentP1Character();
+        character.getWeapons().add((Weapon) controller.getWeapon((String) comBoxAddRem1.getSelectedItem()));
+        playe1List.remove(controller.getCurrentP1Position());
+        playe1List.add(controller.getCurrentP1Position(), character);
+        comBoxWeaponP1.removeAllItems();
+        for(IWeapon i : playe1List.get(controller.getCurrentP1Position()).getWeapons()){
+            Weapon w = (Weapon) i;
+            comBoxWeaponP1.addItem(w.getName());
+        }
+        try{
+            String path = controller.getWeaponImg((String)comBoxWeaponP1.getSelectedItem());
+            BufferedImage img = ImageIO.read(new File(path));
+            labelWeaponIcon1.setIcon(new ImageIcon(img));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        
+    }//GEN-LAST:event_btnAdd1ActionPerformed
+
+    private void btnRemove2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemove2ActionPerformed
+        
+        ICharacter character = controller.getCurrentP2Character();
+        //.remove((Weapon) controller.getWeapon((String) comBoxAddRem2.getSelectedItem()));
+        List<Weapon> wList = character.getWeapons();
+        controller.removeWeapon(wList, (String) comBoxAddRem2.getSelectedItem());
+        playe2List.remove(controller.getCurrentP2Position());
+        playe2List.add(controller.getCurrentP2Position(), character);
+        comBoxWeaponP2.removeAllItems();
+        for(IWeapon i : playe2List.get(controller.getCurrentP2Position()).getWeapons()){
+            Weapon w = (Weapon) i;
+            comBoxWeaponP2.addItem(w.getName());
+        }
+        try{
+            String path = controller.getWeaponImg((String)comBoxWeaponP2.getSelectedItem());
+            BufferedImage img = ImageIO.read(new File(path));
+            labelWeaponIcon2.setIcon(new ImageIcon(img));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        
+    }//GEN-LAST:event_btnRemove2ActionPerformed
+
+    private void btnRemove1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemove1ActionPerformed
+        ICharacter character = controller.getCurrentP1Character();
+        List<Weapon> wList = character.getWeapons();
+        controller.removeWeapon(wList, (String) comBoxAddRem1.getSelectedItem());
+        playe1List.remove(controller.getCurrentP1Position());
+        playe1List.add(controller.getCurrentP1Position(), character);
+        comBoxWeaponP1.removeAllItems();
+        for(IWeapon i : playe1List.get(controller.getCurrentP1Position()).getWeapons()){
+            Weapon w = (Weapon) i;
+            comBoxWeaponP1.addItem(w.getName());
+        }
+        try{
+            String path = controller.getWeaponImg((String)comBoxWeaponP1.getSelectedItem());
+            BufferedImage img = ImageIO.read(new File(path));
+            labelWeaponIcon1.setIcon(new ImageIcon(img));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }//GEN-LAST:event_btnRemove1ActionPerformed
 
     /**
      * @param args the command line arguments

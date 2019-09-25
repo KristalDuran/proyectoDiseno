@@ -36,6 +36,42 @@ public class Controller {
     private List<ICharacter> playe2List = new ArrayList<>();
     /*builder*/
     private CharacterBuilder builder;
+    private ICharacter currentP1Character;
+    private ICharacter currentP2Character;
+    private int currentP1Position;
+    private int currentP2Position;
+
+    public int getCurrentP1Position() {
+        return currentP1Position;
+    }
+
+    public void setCurrentP1Position(int currentPosition) {
+        this.currentP1Position = currentPosition;
+    }
+    
+    public int getCurrentP2Position() {
+        return currentP2Position;
+    }
+
+    public void setCurrentP2Position(int currentPosition) {
+        this.currentP2Position = currentPosition;
+    }
+
+    public ICharacter getCurrentP1Character() {
+        return currentP1Character;
+    }
+
+    public void setCurrentP1Character(ICharacter currentCharacter) {
+        this.currentP1Character = currentCharacter;
+    }
+    
+    public ICharacter getCurrentP2Character() {
+        return currentP2Character;
+    }
+
+    public void setCurrentP2Character(ICharacter currentCharacter) {
+        this.currentP2Character = currentCharacter;
+    }
     
     public Controller(){
         builder = new CharacterBuilder();
@@ -70,6 +106,7 @@ public class Controller {
             PrototypeFactoryWeapon.addWeapon(w.getName(), w);
         }
         for(ICharacter c : characterList){
+            System.out.println(c.getName());
             PrototypeFactoryCharacter.addCharacter(c.getName(), (IPrototypeCharacter) c);
         }
     }
@@ -82,6 +119,7 @@ public class Controller {
                 imgPath = w.getImgPath().get(0);
             }
         }
+        System.out.println(imgPath);
         return imgPath;
     }
     
@@ -230,6 +268,15 @@ public class Controller {
     
     public Mecha buildMecha(){
         return (Mecha) builder.buildMecha();
+    }
+
+    void removeWeapon(List<Weapon> wList, String string) {
+        for(IWeapon i : wList){
+            Weapon w = (Weapon) i;
+            if (w.getName().equals(string)) {
+                wList.remove(w);
+            }
+        }
     }
     
 }
